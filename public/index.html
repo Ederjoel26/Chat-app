@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fake chat app</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+<body>
+  <div class="container">
+    
+    <div class="top">
+      <div class="top-left">
+        <button class="btn-arrow-back">
+          <i class='bx bx-arrow-back'></i>
+        </button>
+        <button class="btn-photo-profile">
+          <img src="https://preview.redd.it/a92pfpwffzx81.jpg?width=640&crop=smart&auto=webp&s=a59399d5bbc4ed156a58b9c86a913da5d9c321c6" class="lbl-face">
+        </button>
+        <label class="lbl-name">durando en el jale</label>
+      </div>
+      <div class="top-rigth">
+        <button class="btn-recording">
+          <i class='bx bxs-video-recording' ></i>
+        </button>
+        <button class="btn-phone">
+          <i class='bx bxs-phone'></i>
+        </button>
+        <button class="btn-settings">
+          <i class='bx bx-dots-vertical-rounded'></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div id="chat" class="container-middle">
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="bottom-left">
+        <button class="btn-emoji">
+          <i class='bx bx-happy'></i>
+        </button>
+        <input id="messageToSend" placeholder="type a message" class="message">
+        </input>
+        <button id="btnClip" class="btn-clip" type="file">
+          <i class='bx bx-paperclip' ></i>
+        </button>
+        <button class="btn-camera">
+          <i class='bx bxs-camera' ></i>
+        </button>
+      </div> 
+      <button id="send" class="btn-microphone">
+        <i class='bx bxs-microphone bx-tada' ></i>
+      </button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+</body>
+</html>
